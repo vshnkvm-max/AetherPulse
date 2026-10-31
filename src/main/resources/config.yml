@@ -1,0 +1,36 @@
+# Distances in blocks; rotation speeds in radians per second.
+performance:
+  animation-update-interval: 2
+  particle-update-interval: 4
+  activation-radius: 48
+  max-particles-per-cycle: 100 # Global budget across all monuments
+  max-display-entities: 100 # Per monument; excludes the single Interaction
+visual:
+  core-size: 0.85
+  segments: 20
+  fragments: 6
+  rings:
+    outer: {radius: 2.4, speed: 0.22}
+    middle: {radius: 1.85, speed: -0.38}
+    inner: {radius: 1.3, speed: 0.65}
+  particles:
+    enabled: true
+    intensity: 1.0
+    dust-color: '#A967FF'
+    spiral: true
+    streams: true
+    bursts: true
+  sounds: true
+progress:
+  # Five strictly increasing nonnegative thresholds, starting at zero.
+  thresholds: [0, 100, 400, 1000, 2500]
+  blocks:
+    enabled: true
+    radius: 32
+    points:
+      AMETHYST_BLOCK: 3
+      DEEPSLATE_DIAMOND_ORE: 10
+      DIAMOND_ORE: 10
+      EMERALD_ORE: 8
+interaction:
+  cooldown-ticks: 30

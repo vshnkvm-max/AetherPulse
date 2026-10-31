@@ -1,0 +1,18 @@
+name: AetherPulse
+version: '1.0.0'
+main: dev.aetherpulse.AetherPulsePlugin
+api-version: '1.21.4'
+author: AetherPulse
+description: Living, evolving crystal monuments built with vanilla Display Entities.
+commands:
+  ap:
+    description: Manage AetherPulse monuments
+    usage: /ap help
+    aliases: [aetherpulse]
+permissions:
+  aetherpulse.admin:
+    description: Manage monuments, configuration, and progress
+    default: op
+  aetherpulse.interact:
+    description: Inspect and interact with crystal cores
+    default: true
